@@ -1,2 +1,2 @@
 # avsamoilava-JSFEPRESCHOOL2022Q2
-Private repository for @avsamoilava
+Study progect for stage 0 RSSchool
