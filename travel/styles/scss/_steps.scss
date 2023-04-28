@@ -1,0 +1,159 @@
+@import "variables";
+
+/* steps ==================================================== */
+
+.steps {
+    padding: 80px 0 97px;
+    background: $light-color;
+
+    @media (max-width: $xs-screen) {
+        padding: 20px 0;
+    }
+
+    // .steps__container
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+
+
+    }
+
+    // .steps__title
+
+    &__title {
+        margin-bottom: 40px;
+        @media (max-width: $xs-screen) {
+           margin-bottom: 20px;
+         }
+    }
+
+    // .steps__list
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-right: 12px;
+        padding-left: 11px;
+
+        @media (max-width: $xs-screen) {
+           padding-right: 0;
+           padding-left: 0;
+        }
+
+        .wrap {
+            display: flex;
+            flex: 0 0 33.33%;
+
+            &_left {
+                justify-content: start;
+            }
+
+            &_center {
+                justify-content: center;
+
+                p {
+                    text-align: center;
+                }
+            }
+
+            &_end {
+                justify-content: end;
+            }
+        }
+    }
+
+    // .steps__item
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &_left {
+
+            img {
+                @media (max-width: $xs-screen) {
+                    width: 35px;
+                    height: 31.5px;
+                }
+            }
+
+            p {
+                @media (max-width: $xs-screen) {
+                    width: 80px;
+                    
+                }
+            }
+
+            @media (max-width: $l-screen) {
+                align-items: start;
+            }
+        }
+
+        &_center {
+            img {
+                @media (max-width: $xs-screen) {
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+        }
+
+        &_right {
+            img {
+                @media (max-width: $xs-screen) {
+                    width: 40px;
+                    height: 30px;
+                }
+            }
+
+            @media (max-width: $l-screen) {
+                align-items: end;
+
+                p {
+                    text-align: right;
+                }
+            }
+        }
+
+    }
+
+    // .steps__icon
+
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        margin-bottom: 30px;
+        background: $accent-color;
+        border-radius: 16px;
+
+
+        @media (max-width: $xs-screen) {
+            width: 70px;
+            height: 70px;
+            margin-bottom: 19px;
+        }
+    }
+
+    // .steps__text
+
+    &__text {
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        color: $primary-color;
+
+        @media (max-width: $xs-screen) {
+            font-size: 10px;
+            line-height: 1.2;
+        }
+    }
+}
